@@ -1,3 +1,5 @@
+@import url('header-extend.css');
+
 :root {
   --desktop-item-panel-max-width: 300px;
   --desktop-item-panel-min-width: 200px;
