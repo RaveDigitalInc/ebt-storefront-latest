@@ -1,3 +1,5 @@
+@import url('footer-extend.css');
+
 footer {
     background-color: var(--color-neutral-100);
     font: var(--type-body-2-default-font);

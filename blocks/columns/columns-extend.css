@@ -1,0 +1,16 @@
+.cms-home .columns-img-col {
+    position: relative;
+}
+
+.cms-home .columns-img-col a:not(.dropin-design a) {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+}
+
+.cms-home .columns-img-col p {
+    margin-bottom: 0;
+}

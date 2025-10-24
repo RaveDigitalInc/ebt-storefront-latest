@@ -1,3 +1,6 @@
+@import url('product.css');
+
+
 .product-details__wrapper {
   display: grid;
   grid-template-columns: repeat(var(--grid-1-columns), 1fr);

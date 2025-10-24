@@ -1,0 +1,9 @@
+
+footer a:not(.dropin-design a) {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .default-content-wrapper {
+    text-align: center;
+}
