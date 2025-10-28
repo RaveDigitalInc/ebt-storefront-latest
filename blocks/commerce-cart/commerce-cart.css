@@ -1,3 +1,5 @@
+@import url('cart.css');
+
 .commerce-cart {
   padding: var(--spacing-large) 0;
   position: relative;

@@ -1,9 +1,38 @@
 
+footer.footer-wrapper {
+    background-color: var(--color-neutral-50);
+}
+
+footer .section {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+}
+
 footer a:not(.dropin-design a) {
+    color: #3d3d3d;
     font-size: 14px;
     font-weight: 400;
 }
 
 footer .default-content-wrapper {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+    margin-top: 15px;
     text-align: center;
+}
+
+footer .columns > div {
+    align-items: start;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+footer ul {
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style: none;
 }

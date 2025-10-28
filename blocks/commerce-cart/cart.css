@@ -1,0 +1,19 @@
+.dropin-cart-list .dropin-incrementer > div {
+    max-width: 150px;
+    margin: 10px 0;
+}
+
+.dropin-cart-list .dropin-incrementer .dropin-incrementer__input {
+    border-left: 1px solid #8f8f8f;
+    border-right: 1px solid #8f8f8f;
+}
+
+.dropin-cart-list .cart__action--wishlist-toggle .dropin-button {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cart-order-summary__content button.dropin-button {
+    font-size: 14px;
+    font-weight: 500;
+}
