@@ -85,7 +85,7 @@ header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .subm
       max-width: 1200px;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li p a,
+  header nav .nav-sections .default-content-wrapper > ul > li p a, 
   header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p {
       font-size: 14px;
       font-weight: 500;
@@ -96,7 +96,7 @@ header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .subm
       letter-spacing: normal;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li p a:hover,
+  header nav .nav-sections .default-content-wrapper > ul > li p a:hover, 
   header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p:hover {
       color: var(--color-brand-500);
   }
