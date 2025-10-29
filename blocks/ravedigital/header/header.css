@@ -33,6 +33,24 @@ header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .subm
     padding: 0 0 5px;
 }
 
+header.header-wrapper nav .nav-tools button.nav-cart-button {
+    background-image: url(../../../icons/ravedigital/cart.svg);
+}
+
+header.header-wrapper nav .nav-tools button.nav-wishlist-button {
+    background-image: url(../../../icons/ravedigital/heart.svg);
+}
+
+header.header-wrapper nav .nav-tools button.nav-dropdown-button {
+    background-image: url(../../../icons/ravedigital/user.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
+    display: none;
+}
+
 @media (min-width: 900px) {
   header {
     height: 120px;
@@ -95,7 +113,7 @@ header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .subm
       font-weight: 500;
       text-transform: uppercase;
       color: #3d3d3d;
-      padding: 10px 0;
+      padding: 8px 0;
       display: inline-block;
       letter-spacing: normal;
   }
@@ -105,8 +123,20 @@ header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .subm
       color: var(--color-brand-500);
   }
 
+  header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p {
+    padding: 0;
+  }
+
   header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p > a {
-      padding: 0;
+      padding: 8px 0;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > p a:hover {
+    border-top: 1px solid #2E8283;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > p a {
+      border-top: 1px solid #fff;
   }
 
   header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li:hover {
