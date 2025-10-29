@@ -1,4 +1,4 @@
-@import url('columns-extend.css');
+@import url('../ravedigital/columns/columns.css');
 
 .columns > div {
   display: flex;

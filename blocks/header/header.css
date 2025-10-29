@@ -1,4 +1,4 @@
-@import url('header-extend.css');
+@import url('../ravedigital/header/header.css');
 
 :root {
   --desktop-item-panel-max-width: 300px;

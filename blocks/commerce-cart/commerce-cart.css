@@ -1,4 +1,4 @@
-@import url('cart.css');
+@import url('../ravedigital/commerce-cart/cart.css');
 
 .commerce-cart {
   padding: var(--spacing-large) 0;

@@ -1,0 +1,22 @@
+
+/* stylelint-disable no-empty-source */
+:root, .dropin-design {
+  /* Adobe Commerce Dropin design tokens */
+  --color-brand-500: #2E8283;
+  --type-base-font-family: "Montserrat", roboto, roboto-fallback, system-ui, sans-serif;
+}
+
+/* fallback font */
+@font-face {
+  font-family: Montserrat;
+  size-adjust: 100%;
+  src: local("Montserrat");
+}
+
+main a.button:hover,
+main a.button:focus,
+button.button:hover,
+button.button:focus {
+  background-color: var(--color-brand-500);
+  cursor: pointer;
+}

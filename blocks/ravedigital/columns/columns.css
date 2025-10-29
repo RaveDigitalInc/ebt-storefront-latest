@@ -14,3 +14,12 @@
 .cms-home .columns-img-col p {
     margin-bottom: 0;
 }
+
+.cms-home main > .section:first-of-type .columns > div {
+    gap: 0;
+    align-items: flex-start;
+}
+
+.cms-home main > .section:first-of-type .columns > div .columns-img-col {
+    flex-basis: auto;
+}
