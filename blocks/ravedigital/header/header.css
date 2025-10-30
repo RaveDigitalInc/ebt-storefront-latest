@@ -34,15 +34,15 @@ header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .subm
 }
 
 header.header-wrapper nav .nav-tools button.nav-cart-button {
-    background-image: url(../../../icons/ravedigital/cart.svg);
+    background-image: url('../../../icons/ravedigital/cart.svg');
 }
 
 header.header-wrapper nav .nav-tools button.nav-wishlist-button {
-    background-image: url(../../../icons/ravedigital/heart.svg);
+    background-image: url('../../../icons/ravedigital/heart.svg');
 }
 
 header.header-wrapper nav .nav-tools button.nav-dropdown-button {
-    background-image: url(../../../icons/ravedigital/user.svg);
+    background-image: url('../../../icons/ravedigital/user.svg');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -75,9 +75,9 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
     height: auto;
   }
 
-  header.header-wrapper .nav-wrapper {
-    border-bottom: none;
-  }
+    header.header-wrapper .nav-wrapper {
+        border-bottom: none;
+    }
 
   header.header-wrapper nav .nav-tools {
     height: auto;
@@ -107,7 +107,7 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
     justify-content: center;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li p a, 
+  header nav .nav-sections .default-content-wrapper > ul > li p a,
   header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p {
       font-size: 14px;
       font-weight: 500;
@@ -118,25 +118,28 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
       letter-spacing: normal;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li p a:hover, 
+  header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p {
+    padding: 0;
+  }
+
   header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p:hover {
       color: var(--color-brand-500);
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p {
-    padding: 0;
+  header nav .nav-sections .default-content-wrapper > ul > li > p a {
+      border-top: 1px solid #fff;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p > a {
       padding: 8px 0;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > p a:hover {
-    border-top: 1px solid #2E8283;
+  header nav .nav-sections .default-content-wrapper > ul > li p a:hover {
+      color: var(--color-brand-500);
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > p a {
-      border-top: 1px solid #fff;
+  header nav .nav-sections .default-content-wrapper > ul > li > p a:hover {
+    border-top: 1px solid #2E8283;
   }
 
   header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li:hover {
