@@ -1,4 +1,27 @@
 
+header .topbar {
+    background-color: #7D5176;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header .topbar a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+header .topbar a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 header.header-wrapper .overlay.show {
     display: none;
 }
@@ -53,7 +76,7 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
 
 @media (min-width: 900px) {
   header {
-    height: 120px;
+    height: 164px;
   }
 
   header.header-wrapper nav {

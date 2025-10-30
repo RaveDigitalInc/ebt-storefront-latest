@@ -23,3 +23,18 @@
 .cms-home main > .section:first-of-type .columns > div .columns-img-col {
     flex-basis: auto;
 }
+
+.cms-home main > .section:first-of-type .columns > div .columns-img-col p {
+    margin-top: 0;
+}
+
+.cms-home main > .section:first-of-type .columns > div .columns-img-col a {
+    background-color: #A26A2A;
+    bottom: 40px;
+    padding: 10px 20px;
+}
+
+.cms-home main > .section:first-of-type .columns > div .columns-img-col a:hover {
+    background-color: #af7839;
+    text-decoration: none;
+}
