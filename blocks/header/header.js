@@ -490,6 +490,15 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 
+  /** Topbar Start */
+  const topBarFragment = document.createRange().createContextualFragment(`
+    <div id="topbar" class="topbar">
+      Free shipping on orders over <span class="goal">$50.00</span>! <a href="/shipping-information">Details</a>
+    </div>
+  `);
+  navWrapper.prepend(topBarFragment);
+  /** Topbar End */
+
   navWrapper.addEventListener('mouseout', (e) => {
     if (isDesktop.matches && !nav.contains(e.relatedTarget)) {
       toggleAllNavSections(navSections);
