@@ -68,6 +68,7 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button {
     background-image: url('../../../icons/ravedigital/user.svg');
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
@@ -98,23 +99,57 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
     height: auto;
   }
 
-    header.header-wrapper .nav-wrapper {
-        border-bottom: none;
-    }
+  header.header-wrapper .nav-wrapper {
+      border-bottom: none;
+  }
 
   header.header-wrapper nav .nav-tools {
     height: auto;
-    padding-top: 20px;
+    gap: var(--spacing-medium);
+    padding-top: 10px;
   }
 
   header.header-wrapper nav .search-wrapper {
     position: absolute;
     left: 32px;
+    margin-top: 10px;
   }
 
   header.header-wrapper nav .search-wrapper .nav-search-input.nav-tools-panel {
     left: auto;
     right: auto;
+  }
+
+  header.header-wrapper nav .nav-tools button.nav-cart-button:before {
+    content: 'Cart';
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -18px;
+    left: 10px;
+  }
+
+  header.header-wrapper nav .nav-tools button.nav-wishlist-button:after {
+    content: 'Favourite';
+    bottom: 2px;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -18px;
+    left: -7px;
+  }
+
+  header.header-wrapper nav .nav-tools button.nav-dropdown-button:after {
+    content: 'Account';
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -18px;
+    left: -6px;
+    letter-spacing: normal;
   }
 
   header nav .nav-sections {
@@ -179,5 +214,11 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
     min-height: auto;
     margin-bottom: 15px;
     width: 100%;
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] .submenu-title + ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
   }
 }

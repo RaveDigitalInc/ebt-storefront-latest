@@ -6,12 +6,44 @@
 
 .product-details__buttons button.dropin-button {
     border-radius: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
     white-space: nowrap;
 }
 
 .product-details__configuration .product-details__quantity input.dropin-incrementer__input {
     border-left: solid var(--shape-border-width-1) var(--color-neutral-600);
     border-right: solid var(--shape-border-width-1) var(--color-neutral-600);
+}
+
+.pdp-swatches {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 18px;
+}
+
+.pdp-swatches .dropin-text-swatch__container label {
+    background-color: var(--color-neutral-50);
+    border-color: var(--color-neutral-800);
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px var(--spacing-xsmall);
+}
+
+.pdp-swatches .dropin-text-swatch__container input[type=radio]:checked+.dropin-text-swatch__label,
+.pdp-swatches .dropin-text-swatch__container input[type=checkbox]:checked+.dropin-text-swatch__label,
+.pdp-swatches .dropin-text-swatch--selected,
+.pdp-swatches .dropin-text-swatch__container input[type=radio]:active+label,
+.pdp-swatches .dropin-text-swatch__container input[type=radio]:checked+label:active,
+.pdp-swatches .dropin-text-swatch__container input[type=radio]:checked+label:hover:not(:focus-visible),
+.pdp-swatches .dropin-text-swatch__container input[type=checkbox]:active+label,
+.pdp-swatches .dropin-text-swatch__container input[type=checkbox]:checked+label:active,
+.pdp-swatches .dropin-text-swatch__container input[type=checkbox]:checked+label:hover:not(:focus-visible) {
+    background-color: var(--color-brand-500);
+    box-shadow: none;
+    color: #fff;
+    border-color: var(--color-brand-500);
 }
 
 @media (min-width: 900px) {
