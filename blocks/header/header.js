@@ -210,25 +210,6 @@ export default async function decorate(block) {
 
   const navTools = nav.querySelector('.nav-tools');
 
-  /** Wishlist */
-  const wishlist = document.createRange().createContextualFragment(`
-     <div class="wishlist-wrapper nav-tools-wrapper">
-       <button type="button" class="nav-wishlist-button" aria-label="Wishlist"></button>
-       <div class="wishlist-panel nav-tools-panel"></div>
-     </div>
-   `);
-
-  navTools.append(wishlist);
-
-  const wishlistButton = navTools.querySelector('.nav-wishlist-button');
-
-  const wishlistMeta = getMetadata('wishlist');
-  const wishlistPath = wishlistMeta ? new URL(wishlistMeta, window.location).pathname : '/wishlist';
-
-  wishlistButton.addEventListener('click', () => {
-    window.location.href = rootLink(wishlistPath);
-  });
-
   /** Mini Cart */
   const excludeMiniCartFromPaths = ['/checkout'];
 
@@ -248,6 +229,26 @@ export default async function decorate(block) {
   if (excludeMiniCartFromPaths.includes(window.location.pathname)) {
     cartButton.style.display = 'none';
   }
+
+  renderAuthDropdown(navTools);
+  /** Wishlist */
+  const wishlist = document.createRange().createContextualFragment(`
+     <div class="wishlist-wrapper nav-tools-wrapper">
+       <button type="button" class="nav-wishlist-button" aria-label="Wishlist"></button>
+       <div class="wishlist-panel nav-tools-panel"></div>
+     </div>
+   `);
+
+  navTools.append(wishlist);
+
+  const wishlistButton = navTools.querySelector('.nav-wishlist-button');
+
+  const wishlistMeta = getMetadata('wishlist');
+  const wishlistPath = wishlistMeta ? new URL(wishlistMeta, window.location).pathname : '/wishlist';
+
+  wishlistButton.addEventListener('click', () => {
+    window.location.href = rootLink(wishlistPath);
+  });
 
   /**
    * Handles loading states for navigation panels with state management
@@ -533,5 +534,4 @@ export default async function decorate(block) {
     navSections,
     () => !isDesktop.matches && toggleMenu(nav, navSections, false),
   );
-  renderAuthDropdown(navTools);
 }
