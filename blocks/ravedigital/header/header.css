@@ -120,7 +120,7 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
     right: auto;
   }
 
-  header.header-wrapper nav .nav-tools button.nav-cart-button:before {
+  header.header-wrapper nav .nav-tools button.nav-cart-button::before {
     content: 'Cart';
     font-size: 10px;
     font-weight: 500;
@@ -130,9 +130,8 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
     left: 10px;
   }
 
-  header.header-wrapper nav .nav-tools button.nav-wishlist-button:after {
+  header.header-wrapper nav .nav-tools button.nav-wishlist-button::after {
     content: 'Favourite';
-    bottom: 2px;
     font-size: 10px;
     font-weight: 500;
     text-transform: uppercase;
@@ -141,7 +140,7 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
     left: -7px;
   }
 
-  header.header-wrapper nav .nav-tools button.nav-dropdown-button:after {
+  header.header-wrapper nav .nav-tools button.nav-dropdown-button::after {
     content: 'Account';
     font-size: 10px;
     font-weight: 500;

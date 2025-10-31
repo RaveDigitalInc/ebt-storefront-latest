@@ -55,6 +55,11 @@ footer .columns-1-cols p.button-container ~ p {
     padding: 0 8px;
 }
 
+footer h2 img {
+    vertical-align: middle;
+    margin-top: -6px;
+}
+
 footer .columns img {
     width: auto;
     height: auto;
@@ -67,11 +72,6 @@ footer h2 {
     line-height: normal;
     margin-bottom: 15px;
     text-transform: uppercase;
-}
-
-footer h2 img {
-    vertical-align: middle;
-    margin-top: -6px;
 }
 
 footer h3 {
