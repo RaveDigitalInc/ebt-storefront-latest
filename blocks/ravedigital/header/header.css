@@ -1,0 +1,253 @@
+
+header .topbar {
+    background-color: #7D5176;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header .topbar a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+header .topbar a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+header.header-wrapper .overlay.show {
+    display: none;
+}
+
+header.header-wrapper nav .search-wrapper .nav-search-input.nav-tools-panel .dropin-input {
+  font-size: 14px;
+}
+
+header .nav-search-panel .search-bar-result a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header .nav-search-panel .search-bar-result .dropin-price-range {
+    justify-content: start;
+}
+
+header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper li strong {
+    font-weight: 400;
+}
+
+header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper li strong a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li {
+    padding-bottom: 15px;
+}
+
+header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li .button-container a {
+    padding: 0 0 5px;
+}
+
+header.header-wrapper nav .nav-tools button.nav-cart-button {
+    background-image: url('../../../icons/ravedigital/cart.svg');
+}
+
+header.header-wrapper nav .nav-tools button.nav-wishlist-button {
+    background-image: url('../../../icons/ravedigital/heart.svg');
+}
+
+header.header-wrapper nav .nav-tools button.nav-dropdown-button {
+    background-image: url('../../../icons/ravedigital/user.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
+    display: none;
+}
+
+@media (min-width: 900px) {
+  header {
+    height: 164px;
+  }
+
+  header.header-wrapper nav {
+    align-items: flex-start;
+    height: 120px;
+    justify-content: end;
+    position: relative;
+  }
+
+  header nav .nav-brand {
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%);
+  }
+
+  header.header-wrapper nav .nav-brand img {
+    width: 200px;
+    height: auto;
+  }
+
+  header.header-wrapper .nav-wrapper {
+      border-bottom: none;
+  }
+
+  header.header-wrapper nav .nav-tools {
+    height: auto;
+    gap: var(--spacing-medium);
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+
+  header.header-wrapper nav .search-wrapper {
+    position: absolute;
+    left: 32px;
+    margin-top: 10px;
+  }
+
+  header.header-wrapper nav .search-wrapper .nav-search-input.nav-tools-panel {
+    left: auto;
+    right: auto;
+  }
+
+  header.header-wrapper nav .nav-tools button.nav-cart-button::before {
+    content: 'Cart';
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -18px;
+    left: 10px;
+  }
+
+  header.header-wrapper nav .nav-tools button.nav-wishlist-button::after {
+    content: 'Favourite';
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -18px;
+    left: -7px;
+  }
+
+  header.header-wrapper nav .nav-tools button.nav-dropdown-button::after {
+    content: 'Account';
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -18px;
+    left: -6px;
+    letter-spacing: normal;
+  }
+
+  header nav .nav-sections {
+      position: absolute;
+      bottom: 0;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+      width: 100%;
+      max-width: 1200px;
+  }
+
+  header nav .nav-sections ul {
+    justify-content: center;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li a {
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li p a,
+  header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: var(--color-neutral-800);
+      padding: 8px 0;
+      display: inline-block;
+      letter-spacing: normal;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p {
+    padding: 0;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p:hover {
+      color: var(--color-brand-500);
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > p a {
+      border-top: 1px solid #fff;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p > a {
+      padding: 8px 0;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li p a:hover {
+      color: var(--color-brand-500);
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > p a:hover {
+    border-top: 1px solid #2E8283;
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li:hover {
+      background-color: transparent;
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] ul {
+    gap: unset;
+    min-height: auto;
+    margin-bottom: 15px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li ul li ul a {
+    color: var(--color-neutral-700);
+    letter-spacing: normal;
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li ul li .button-container a {
+    color: var(--color-brand-500);
+    text-transform: none;
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li ul li ul a:hover {
+    color: var(--color-neutral-900);
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li ul li .button-container a:hover {
+    color: var(--color-neutral-800);
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li ul li ul {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] .submenu-wrapper {
+    top: auto;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] .submenu-title + ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
