@@ -30,6 +30,11 @@ footer .columns-1-cols {
     padding-bottom: 40px;
 }
 
+footer .columns-1-cols p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
 footer .columns-1-cols p.button-container {
     margin: 35px 0;
 }

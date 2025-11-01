@@ -107,6 +107,7 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
     height: auto;
     gap: var(--spacing-medium);
     padding-top: 10px;
+    padding-right: 20px;
   }
 
   header.header-wrapper nav .search-wrapper {
@@ -164,12 +165,17 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
     justify-content: center;
   }
 
+  header nav .nav-sections .default-content-wrapper > ul > li a {
+    font-weight: 500;
+    line-height: 24px;
+  }
+
   header nav .nav-sections .default-content-wrapper > ul > li p a,
   header nav .nav-sections .default-content-wrapper > ul > li.nav-drop > p {
       font-size: 14px;
       font-weight: 500;
       text-transform: uppercase;
-      color: #3d3d3d;
+      color: var(--color-neutral-800);
       padding: 8px 0;
       display: inline-block;
       letter-spacing: normal;
@@ -203,6 +209,29 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
       background-color: transparent;
   }
 
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li ul li .button-container a {
+    color: var(--color-brand-500);
+    text-transform: none;
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li ul li .button-container a:hover {
+    color: var(--color-neutral-800);
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li ul li ul {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li ul li ul a {
+    color: var(--color-neutral-700);
+    letter-spacing: normal;
+  }
+
+  header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li .submenu-wrapper > ul > li ul li ul a:hover {
+    color: var(--color-neutral-900);
+  }
+
   header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] .submenu-wrapper {
     top: auto;
     box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
@@ -212,6 +241,7 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
     gap: unset;
     min-height: auto;
     margin-bottom: 15px;
+    overflow-x: hidden;
     width: 100%;
   }
 
