@@ -1,3 +1,5 @@
+@import url('../ravedigital/accordion/accordion.css');
+
 .accordion details {
     border: 1px solid #dadada;
 }

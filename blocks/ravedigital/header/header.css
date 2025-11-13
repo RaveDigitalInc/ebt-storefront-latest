@@ -204,6 +204,11 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button svg {
   header nav .nav-sections .default-content-wrapper > ul > li > p a:hover {
     border-top: 1px solid #2E8283;
   }
+  
+  header nav .nav-sections .default-content-wrapper > ul > li.nav-drop[aria-expanded="true"] > p > a {
+      color: #2E8283;
+      border-top: 1px solid #2E8283;
+  }
 
   header.header-wrapper nav .nav-sections .default-content-wrapper > ul > li:hover {
       background-color: transparent;

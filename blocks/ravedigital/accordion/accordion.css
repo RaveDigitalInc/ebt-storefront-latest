@@ -1,0 +1,57 @@
+.cms-template .accordion-container h2 {
+    background-color: #eee;
+    padding: 8px 15px;
+}
+
+.cms-template .accordion-wrapper {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.cms-template .accordion-wrapper .accordion details {
+    border: none;
+    border-bottom: 1px solid #dadada;
+}
+
+.cms-template .accordion-wrapper .accordion details summary p {
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: normal;
+}
+
+.cms-template .accordion-wrapper .accordion details .accordion-item-body p {
+    font-size: 14px;    
+    margin: 15px 0 0;
+    letter-spacing: normal;
+}
+
+.cms-template .accordion-wrapper .accordion details[open] summary p {
+    color: #2E8283;
+}
+
+.cms-template .accordion-wrapper .accordion details + details {
+    margin-top: 5px;
+}
+
+.cms-template .accordion-wrapper .accordion details summary {
+    padding: 10px 16px;
+}
+
+.cms-template .accordion-wrapper .accordion details .accordion-item-body {
+    border: none;
+    padding-bottom: 15px;
+}
+
+.cms-template .accordion-wrapper .accordion details .accordion-item-body p a {
+    font-size: inherit;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: underline;
+}
+
+.cms-template .accordion-wrapper .accordion details .accordion-item-body p.button-container a {
+    border-radius: unset;
+    letter-spacing: normal;
+    margin: 0;
+    text-decoration: none;
+}
