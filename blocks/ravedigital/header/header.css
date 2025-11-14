@@ -68,6 +68,7 @@ header.header-wrapper nav .nav-tools button.nav-dropdown-button {
     background-image: url('../../../icons/ravedigital/user.svg');
     background-position: center;
     background-repeat: no-repeat;
+    font-size: 0 !important;
     position: relative;
 }
 
