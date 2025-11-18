@@ -164,88 +164,6 @@ button.button:focus {
     margin-bottom: 10px;
 }
 
-.cms-wrap-skrit main h2 {
-    font-size: 50px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 0;
-    margin-bottom: 0;
-    line-height: normal;
-}
-
-.cms-wrap-skrit main .columns-img-col {
-    text-align: center;
-}
-
-.cms-wrap-skrit main .columns .columns-img-col img {
-    width: auto;
-    display: inline-block;
-}
-
-.cms-wrap-skrit main .section > div {
-    margin-bottom: 40px;
-}
-
-.cms-wrap-skrit main .column.block {
-    text-align: center;
-}
-
-.cms-wrap-skrit main .column.block picture {
-    width: 100%;
-    display: block;
-    text-align: center;
-}
-
-.cms-wrap-skrit main .section .carousel-wrapper {
-    margin-bottom: 70px;
-    max-width: 1200px;
-    padding: 0 var(--spacing-big);
-}
-
-.cms-wrap-skrit main .carousel-container p {
-    padding: 0;
-}
-
-.cms-wrap-skrit main .carousel .carousel-slides {
-    align-items: flex-start;
-    height: auto;
-    overflow: hidden;
-}
-
-.cms-wrap-skrit main .carousel .carousel-slide-indicators {
-    bottom: -10px;
-}
-
-.cms-wrap-skrit main .carousel .carousel-slide .carousel-slide-image {
-    position: static;
-}
-
-.cms-wrap-skrit main .carousel .carousel-slide .carousel-slide-image picture {
-    position: static;
-}
-
-.cms-wrap-skrit main .carousel .carousel-slide .carousel-slide-image picture > img {
-    height: auto;
-    width: auto;
-    object-fit: none;
-}
-
-.cms-wrap-skrit main .carousel .carousel-slide .carousel-slide-content {    
-    background: transparent;
-    box-sizing: border-box;
-    color: #222;
-    margin: 0;
-    position: static;
-    --slide-content-width: auto;
-    width: 100%;    
-}
-
-.cms-wrap-skrit main .carousel .carousel-slide .carousel-slide-content p {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
 .cms-aboutus main .columns > div {
     margin: 20px 0;
     text-align: center;
@@ -297,11 +215,8 @@ button.button:focus {
     main {
         padding-top: 80px;
     }
-}
 
-@media (min-width: 768px) {
-    .cms-wrap-skrit main .carousel .carousel-slide {
-        flex: 0 0 415px;
-        padding: 0 10px;
+    main .commerce-cart {
+        padding-top: 0;
     }
 }

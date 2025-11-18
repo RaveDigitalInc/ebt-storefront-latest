@@ -1,3 +1,5 @@
+@import url('../ravedigital/carousel/carousel.css');
+
 main > .section .carousel-wrapper {
     max-width: unset;
     padding: 0;
