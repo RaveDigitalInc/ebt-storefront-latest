@@ -1,0 +1,121 @@
+:root {
+    --type-display-1-font: normal normal 600 3rem/2.8rem var(--type-base-font-family);
+}
+
+.product-list-page .search__facets .dropin-checkbox {
+    grid-template-columns: auto;
+}
+
+.product-list-page .search__facets .dropin-checkbox__checkbox-icon {
+    display: none;
+}
+
+.product-list-page .search__facets .dropin-checkbox .dropin-checkbox__label {
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.product-list-page .search__facets .product-discovery-facet__header {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+.product-list-page .search__facets button.dropin-button {
+    font-size: 12px;
+    font-weight: 500;
+    gap: 2px;
+    letter-spacing: normal;
+}
+
+.product-list-page .search__facets button.dropin-button .dropin-button-icon {
+    height: 18px;
+    width: 18px;
+}
+
+.product-discovery-product-actions button.dropin-button.dropin-button--primary,
+.product-discovery-product-actions a.dropin-button.dropin-button--primary {
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 1rem;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.product-discovery-product-actions button.dropin-button.dropin-button--primary svg.dropin-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.product-discovery-product-actions button.dropin-iconButton {
+    padding: 0;
+}
+
+.product-discovery-product-list__grid .dropin-product-item-card img {
+    aspect-ratio: auto;
+}
+
+.search__product-list .dropin-product-item-card__title {
+    text-align: center;
+    line-height: 1.35;
+}
+
+.search__product-list .dropin-product-item-card__title a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+
+.dropin-product-item-card__title a:hover {
+    text-decoration: none;
+}
+
+.dropin-product-item-card .dropin-product-item-card__price a:hover {
+    text-decoration: none;
+}
+
+.dropin-product-item-card:hover .dropin-product-item-card__title a {
+    color: var(--color-brand-500);
+}
+
+.dropin-product-item-card .dropin-price-range {
+    justify-content: center;
+}
+
+.dropin-product-item-card .dropin-price-range span.dropin-price {
+    color: var(--color-neutral-800);
+    font-weight: 600;
+}
+
+.product-list-page .product-discovery-product-actions {
+    justify-content: center;
+}
+
+.dropin-pagination {
+    gap: 5px;
+}
+
+.dropin-pagination_list {
+    gap: 5px;
+}
+
+.dropin-pagination_list-item,
+.dropin-pagination button.dropin-pagination-arrow {
+    border: 1px solid var(--color-brand-600);
+    width: 30px;
+    height: 30px;
+}
+
+.dropin-pagination button.dropin-pagination-arrow {
+    height: 32px;
+}
+
+.dropin-pagination_list-item--active {
+    background-color: var(--color-neutral-50);
+    border: 1px solid var(--color-brand-500);
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,222 @@
+
+/* stylelint-disable no-empty-source */
+:root, .dropin-design {
+  /* Adobe Commerce Dropin design tokens */
+  --color-brand-500: #2E8283;
+  --type-base-font-family: "Montserrat", roboto, roboto-fallback, system-ui, sans-serif;
+  --type-display-1-font: normal normal 600 2.8rem/3.6rem var(--type-base-font-family);
+  --type-display-2-font: normal normal 600 2.2rem/3.2rem var(--type-base-font-family);
+  --type-display-3-font: normal normal 600 1.8rem/3rem var(--type-base-font-family);
+}
+
+/* fallback font */
+@font-face {
+  font-family: Montserrat;
+  size-adjust: 100%;
+  src: local("Montserrat");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: normal;
+}
+
+main a.button:hover,
+main a.button:focus,
+button.button:hover,
+button.button:focus {
+  background-color: var(--color-brand-500);
+  cursor: pointer;
+}
+
+/* EBT CMS Pages --------------------- */
+
+.cms-template {
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.cms-template main h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+.cms-template main h1 strong {
+    font-weight: inherit;
+}
+
+.cms-template main h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.cms-template main h2 strong {
+    font-weight: inherit;
+}
+
+.cms-template main h2 + p {
+    margin-top: 10px;
+}
+
+.cms-template table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cms-template table td {
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.cms-template table td p {
+    margin: 0 0 15px;
+}
+
+.cms-template main p {
+    font-size: 14px;
+    letter-spacing: normal;
+}
+
+.cms-template main p a:not(.dropin-design a) {
+    font-size: inherit;
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.cms-template main p.button-container a.button {
+    margin: 0;
+    text-decoration: none;
+}
+
+.cms-template .button-container a.button.primary {
+    border-radius: unset;    
+    font-weight: 600;
+    letter-spacing: normal;
+    margin: 0;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cms-template main .columns > div {
+    align-items: flex-start;
+}
+
+.cms-template main .columns > div > div {
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.cms-template main .columns-3-cols h2 {
+    text-align: center;
+}
+
+.cms-template main .columns-3-cols p {
+    text-align: center;
+}
+
+.cms-template main .columns-3-cols p.button-container {
+    display: block;
+}
+
+.cms-template main .columns-3-cols p.button-container a.button.primary {
+    width: 100%;
+    max-width: 290px;
+}
+
+.cms-template main .columns-3-cols img {
+    max-width: 160px;
+}
+
+.cms-template main p.button-container {
+    margin: 0;
+    display: inline-block;
+}
+
+.cms-template main a:not(.dropin-design a) {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.cms-template main ul li {
+    font-size: 14px;
+}
+
+.cms-template main ul li p {
+    margin: 0;
+}
+.cms-template main ul li ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cms-aboutus main .columns > div {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.cms-aboutus main .columns > div h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cms-aboutus main .columns > div p {
+    font-size: 24px;
+    max-width: 70%;
+    margin: 5px auto;    
+    line-height: 1.4;
+}
+
+.cms-aboutus main .column.block {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cms-aboutus main .column.block p {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.cms-aboutus main .column.block .button-container {
+    margin-top: 20px;
+}
+
+.cms-aboutus main  a.button.primary {
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: 700;
+    min-width: 230px;
+    margin: 0;
+    padding: 8px 20px;
+    text-transform: uppercase;
+}
+
+.cms-aboutus main  a.button.primary:hover {
+    background-color: #285e59;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    main {
+        padding-top: 80px;
+    }
+
+    main .commerce-cart {
+        padding-top: 0;
+    }
+}
