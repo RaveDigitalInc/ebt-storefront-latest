@@ -97,6 +97,7 @@ export default async function decorate(block) {
         <div class="product-details__gift-card-options"></div>
         <div class="product-details__configuration">
           <div class="product-details__options"></div>
+          <div class="product-details__size-guide"></div>
           <div class="product-details__quantity"></div>
           <div class="product-details__buttons">
             <div class="product-details__buttons__add-to-cart"></div>
@@ -116,6 +117,7 @@ export default async function decorate(block) {
   const $galleryMobile = fragment.querySelector('.product-details__right-column .product-details__gallery');
   const $shortDescription = fragment.querySelector('.product-details__short-description');
   const $options = fragment.querySelector('.product-details__options');
+  const $sizeGuide = fragment.querySelector('.product-details__size-guide');
   const $quantity = fragment.querySelector('.product-details__quantity');
   const $giftCardOptions = fragment.querySelector('.product-details__gift-card-options');
   const $addToCart = fragment.querySelector('.product-details__buttons__add-to-cart');
@@ -124,6 +126,16 @@ export default async function decorate(block) {
   const $attributes = fragment.querySelector('.product-details__attributes');
 
   block.replaceChildren(fragment);
+
+  // Only fetch the feature module when the product exposes the size guide attribute.
+  if (product?.attributes) {
+    try {
+      const { default: mountSizeGuide } = await import('../../scripts/components/size-guide/size-guide.js');
+      mountSizeGuide($sizeGuide, product.attributes, labels.Global || {});
+    } catch (error) {
+      console.error('Unable to initialize size guide for product:', product.sku, error);
+    }
+  }
 
   const gallerySlots = {
     CarouselThumbnail: (ctx) => {
