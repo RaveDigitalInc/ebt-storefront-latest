@@ -1,6 +1,5 @@
 import { loadCSS } from '../../aem.js';
 
-// The catalog attribute code is kept in one place for merchant-specific changes.
 const SIZE_GUIDE_ATTRIBUTE = 'show_size_chart';
 let chartPromise;
 let instanceCount = 0;
@@ -24,42 +23,69 @@ function chartData() {
   return chartPromise;
 }
 
-function makeTable(chart, captionText) {
+function tableShell(label, compact = false) {
   const wrapper = document.createElement('div');
   wrapper.className = 'size-guide__table-wrapper';
   wrapper.tabIndex = 0;
   wrapper.setAttribute('role', 'region');
-  wrapper.setAttribute('aria-label', captionText);
+  wrapper.setAttribute('aria-label', label);
   const table = document.createElement('table');
+  if (compact) table.className = 'size-guide__ring-table';
   const caption = document.createElement('caption');
-  caption.textContent = captionText;
+  caption.textContent = label;
   table.append(caption);
+  wrapper.append(table);
+  return { wrapper, table };
+}
+
+function cell(tag, text, scope, span) {
+  const element = document.createElement(tag);
+  element.textContent = text;
+  if (scope) element.scope = scope;
+  if (span) element.colSpan = span;
+  return element;
+}
+
+function apparelTable(group, label) {
+  const { wrapper, table } = tableShell(label);
   const head = document.createElement('thead');
   const headingRow = document.createElement('tr');
-  chart.columns.forEach((column) => {
-    const cell = document.createElement('th');
-    cell.scope = 'col';
-    cell.textContent = column;
-    headingRow.append(cell);
-  });
+  headingRow.append(cell('th', 'Size', 'col'));
+  group.sizes.forEach((size) => headingRow.append(cell('th', size, 'colgroup', 4)));
   head.append(headingRow);
   table.append(head);
+
   const body = document.createElement('tbody');
-  chart.rows.forEach(([size, ...measurements]) => {
+  const usRow = document.createElement('tr');
+  usRow.append(cell('th', 'US Size', 'row'));
+  group.usSizes.forEach((size) => usRow.append(cell('td', size, null, 2)));
+  body.append(usRow);
+  group.measurements.forEach(({ label: measurement, values }) => {
     const row = document.createElement('tr');
-    const sizeCell = document.createElement('th');
-    sizeCell.scope = 'row';
-    sizeCell.textContent = size;
-    row.append(sizeCell);
-    measurements.forEach((measurement) => {
-      const cell = document.createElement('td');
-      cell.textContent = measurement;
-      row.append(cell);
+    row.append(cell('th', measurement, 'row'));
+    values.forEach(([inches, centimeters]) => {
+      row.append(cell('td', inches), cell('td', centimeters));
     });
     body.append(row);
   });
   table.append(body);
-  wrapper.append(table);
+  return wrapper;
+}
+
+function ringTable(chart) {
+  const { wrapper, table } = tableShell(chart.title, true);
+  const head = document.createElement('thead');
+  const headingRow = document.createElement('tr');
+  chart.sizes.forEach((size) => headingRow.append(cell('th', size, 'col')));
+  head.append(headingRow);
+  table.append(head);
+  const body = document.createElement('tbody');
+  chart.rows.forEach((values) => {
+    const row = document.createElement('tr');
+    values.forEach((value) => row.append(cell('td', value)));
+    body.append(row);
+  });
+  table.append(body);
   return wrapper;
 }
 
@@ -126,10 +152,12 @@ function buildContent(charts, labels) {
     panel.setAttribute('aria-labelledby', tab.id);
     panel.tabIndex = 0;
     if (key === 'rings') {
-      panel.append(makeTable(charts.rings.women, `${label} — ${sections[0][1]}`));
-      panel.append(makeTable(charts.rings.men, `${label} — ${sections[1][1]}`));
+      panel.append(ringTable(charts.rings.women), ringTable(charts.rings.men));
     } else {
-      panel.append(makeTable(charts[key], label));
+      const heading = document.createElement('h3');
+      heading.textContent = 'Apparel';
+      panel.append(heading);
+      charts[key].forEach((group) => panel.append(apparelTable(group, label)));
     }
     panels.push(panel);
   });
