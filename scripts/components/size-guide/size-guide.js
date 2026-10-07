@@ -1,7 +1,7 @@
 import { loadCSS } from '../../aem.js';
 
 // The catalog attribute code is kept in one place for merchant-specific changes.
-const SIZE_GUIDE_ATTRIBUTE = 'size_guide';
+const SIZE_GUIDE_ATTRIBUTE = 'show_size_chart';
 let chartPromise;
 let instanceCount = 0;
 
