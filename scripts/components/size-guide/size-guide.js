@@ -7,10 +7,11 @@ let instanceCount = 0;
 
 function isEnabled(attributes) {
   const attribute = Array.isArray(attributes)
-    ? attributes.find((entry) => (entry.name ?? entry.code ?? entry.attribute_code) === SIZE_GUIDE_ATTRIBUTE)
+    ? attributes.find((entry) => (entry.id ?? entry.name ?? entry.code ?? entry.attribute_code) === SIZE_GUIDE_ATTRIBUTE)
     : attributes?.[SIZE_GUIDE_ATTRIBUTE];
   const value = attribute && typeof attribute === 'object' ? attribute.value : attribute;
-  return value === true || value === 1 || value === '1' || value === 'true';
+  return value === true || value === 1 || (typeof value === 'string'
+    && ['1', 'true', 'yes'].includes(value.trim().toLowerCase()));
 }
 
 function chartData() {
